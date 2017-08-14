@@ -1,0 +1,8 @@
+node_modules/
+package-lock.json
+._*
+.idea/
+.DS_Store
+bower_components/
+dist/
+

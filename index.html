@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello React</title>
+
+</head>
+<body>
+<div id="cont">Here</div>
+
+<script src="js/lib/require.js"></script>
+<script>
+
+    require(['js/app'], function() {
+
+        require(['hello'], (Hello) => {
+            const container = document.getElementById('cont');
+            console.log(Hello);
+            new Hello.default(container);
+
+        });
+
+    });
+</script>
+
+
+</body>
+</html>
