@@ -4,24 +4,40 @@
     <meta charset="UTF-8">
     <title>Hello React</title>
 
+    <!--Require.js is to used to consume indexAMD file.-->
+    <script src="js/lib/require.js"></script>
+
+    <!--This bundle.js is used to demonstrate the component consumed through React by
+    using `npm install react-fj-component`-->
+    <script async src="./dist/bundle.js"></script>
+
+
 </head>
 <body>
+<!--cont element is used to demonstrate indexAMD usage-->
 <div id="cont">Here</div>
-
-<script src="js/lib/require.js"></script>
+<!--This script is also part of demonstrating indexAMD usage-->
 <script>
-
     require(['js/app'], function() {
 
         require(['hello'], (Hello) => {
             const container = document.getElementById('cont');
-            console.log(Hello);
             new Hello.default(container);
-
         });
-
     });
 </script>
+
+<br />
+<div>Above is the Hello component worked through indexAMD file and used bower with it, and also used requireJS</div>
+<br />
+<div>Below is the Hello component worked through React and node with index.js file</div>
+<br />
+<!--fr element is used to demonstrate the component consumed through React by
+    using `npm install react-fj-component` -->
+<!--The code related to this fr element is written in index.js-->
+<div id="fr"></div>
+
+
 
 
 </body>
