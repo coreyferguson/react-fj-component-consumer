@@ -11,5 +11,5 @@ We can consume it in two ways right now:
 2. Browser
 &nbsp;&nbsp;&nbsp;&nbsp; `bower install react-fj-component` installs react-fj-component under bower_components. We can then simply import the component and use it with requireJS. We can see the results for this one directly opening the index.html file. 
 
->Demonstration of both ways is given in the react-fj-component-consumer. If we run webpack-dev-server command and test it in the broweser then we can see both the components appearing, but if we just directly open index.html file then we can see only one compoenent appearing. Further explanation is given in index.html file. 
+>Demonstration of both ways is given in the react-fj-component-consumer. If we run webpack-dev-server command and test it in the broweser then we can see both the components appearing, but if we just directly open index.html file then we see only one compoenent appearing. Further explanation is given in index.html file. 
 
